@@ -51,8 +51,9 @@ the = train(nor,lab)
 act = m[:,-1]
 pre = nor.dot(the)
 y = np.arange(1,48)
-org = plt.scatter(y, act ,marker="x", color="red" )
-pred = plt.scatter(y,pre , marker="o",color="blue")
+org = plt.scatter(y, act ,marker="x" )
+pred = plt.scatter(y,pre , marker="o",color="red")
 plt.legend((org,pred),("Original","Prediction"))
-plt.show()
 plt.savefig("Multi.png")
+plt.show()
+
